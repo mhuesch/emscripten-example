@@ -1,7 +1,7 @@
 var ConsoleLib = {
   console_log: function(str) {
     var el = document.getElementById("console");
-    el.innerHTML += Pointer_stringify(str);
+    el.innerHTML += UTF8ToString(str);
   }
 };
 

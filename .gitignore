@@ -2,3 +2,6 @@
 .direnv/
 result
 result-bin
+
+hello.js
+hello.wasm
