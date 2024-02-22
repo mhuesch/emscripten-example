@@ -9,10 +9,9 @@ void say_hello() {
 
 void echo(char * input) {
   char * res;
-  int len = sizeof *res *(strlen(input));
+  int len = (sizeof *res)*(strlen(input));
   res = (char *)calloc(0, len+2);
-  res[len] = '\n';
-  memcpy(res, input, len);
+  sprintf(res, "%s\n", input);
   console_log(res);
 }
 
