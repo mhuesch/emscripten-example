@@ -20,6 +20,7 @@
             buildInputs = with pkgs; [
               emscripten
               gdb
+              miniserve
               nodejs
             ];
           };
