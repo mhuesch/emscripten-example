@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void console_log(const char* str)
+void console_log(char* str)
 {
-  printf(str);
+  printf("%s", str);
 }
