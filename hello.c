@@ -16,8 +16,7 @@ void echo(char * input) {
   console_log(res);
 }
 
-int main(int argc, const char *argv[])
-{
+int main(int argc, const char *argv[]) {
   say_hello();
   return 0;
 }
