@@ -3,7 +3,7 @@ SOURCES = hello.c
 SOURCES_EXTRA = console.c
 HTTP_PORT=8080
 
-EMFLAGS = -sEXPORTED_FUNCTIONS="['_say_hello']" -sEXPORTED_RUNTIME_METHODS=ccall,cwrap --post-js post.js --js-library console.js
+EMFLAGS = -sEXPORTED_FUNCTIONS="['_say_hello','_echo']" -sEXPORTED_RUNTIME_METHODS=ccall,cwrap --post-js post.js --js-library console.js
 
 build: $(SOURCES)
 	$(EMCC) $(EMFLAGS) $(SOURCES) -o hello.js

@@ -9,6 +9,10 @@
 <body>
   <h1>Hello Emscripten</h1>
   <input type="button" name="some_name" value="Say Hello!" onclick="javascript:say_hello();">
+  <br/>
+  <input type="text" id="text_input" placeholder="example">
+  <input type="button" value="echo" onClick="javascript:echo(document.getElementById('text_input').value);"/>
+  <br/>
   <pre id="console"></pre>
 </body>
 </html>
