@@ -10,7 +10,7 @@ void say_hello() {
 void echo(char * input) {
   char * res;
   int len = (sizeof *res)*(strlen(input));
-  res = (char *)calloc(0, len+2);
+  res = (char *)malloc(len+2);
   sprintf(res, "%s\n", input);
   console_log(res);
 }
